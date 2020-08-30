@@ -10,7 +10,7 @@ namespace CPFValidator
         public void ConnectHost()
         {
             Socket sending_socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,ProtocolType.Udp);
-            IPAddress send_to_address = IPAddress.Parse("192.168.2.255");
+            IPAddress send_to_address = IPAddress.Parse("127.0.0.1");
             IPEndPoint sending_end_point = new IPEndPoint(send_to_address, 11000);
 
             Console.WriteLine("Digite o CPF: ");
