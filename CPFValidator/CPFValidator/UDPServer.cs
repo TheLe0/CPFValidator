@@ -5,11 +5,11 @@ using System.Text;
 
 namespace CPFValidator
 {
-	public class UDPServer
+	public class UDPServer :IServer
 	{
 		private const int listenPort = 11000;
 
-		public int CreateHost()
+		public void CreateHost()
 		{
 			UdpClient listener = new UdpClient(listenPort);
 			IPEndPoint groupEP;
@@ -45,8 +45,6 @@ namespace CPFValidator
 				listener.Close();
 			}
 			
-			return 0;
-
 		}
 	}
 }

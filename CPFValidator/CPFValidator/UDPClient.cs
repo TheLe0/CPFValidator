@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CPFValidator
 {
-    class UDPClient
+    class UDPClient :IClient
     {
         public void ConnectHost()
         {

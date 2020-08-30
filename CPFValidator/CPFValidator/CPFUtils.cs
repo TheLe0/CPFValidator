@@ -62,6 +62,4 @@
 			return cpf.EndsWith(digito);
 	    }
 	}
-
-    }
 }

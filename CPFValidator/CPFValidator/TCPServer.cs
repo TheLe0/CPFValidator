@@ -4,7 +4,7 @@ using System.Net.Sockets;
 
 namespace CPFValidator
 {
-    class TCPServer
+    class TCPServer : IServer
     {
         public TcpListener Servidor { private set; get; }
         public void CreateHost()
